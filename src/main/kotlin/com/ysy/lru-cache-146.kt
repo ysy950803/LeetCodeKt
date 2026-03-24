@@ -61,8 +61,8 @@ class LRUCache(private val capacity: Int) {
 }
 
 /**
- * Your LRUCache object will be instantiated and called as such:
- * var obj = LRUCache(capacity)
+ * Your com.ysy.LRUCache object will be instantiated and called as such:
+ * var obj = com.ysy.LRUCache(capacity)
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */

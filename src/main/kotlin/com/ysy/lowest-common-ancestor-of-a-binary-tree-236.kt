@@ -2,18 +2,13 @@ package com.ysy
 
 /**
  * Definition for a binary tree node.
- * class TreeNode(var `val`: Int = 0) {
- *     var left: TreeNode? = null
- *     var right: TreeNode? = null
+ * class com.ysy.TreeNode(var `val`: Int = 0) {
+ *     var left: com.ysy.TreeNode? = null
+ *     var right: com.ysy.TreeNode? = null
  * }
  */
 
-class TreeNode(var `val`: Int = 0) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
-class Solution {
+class Solution236 {
 
     private val currentPath = ArrayDeque<TreeNode>()
 
@@ -46,7 +41,7 @@ class Solution {
     private fun TreeNode.isSame(node: TreeNode?) = `val` == node?.`val`
 }
 
-class Solution2 {
+class Solution236_2 {
 
     fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
         if (root == null || root.isSame(p) || root.isSame(q)) return root
