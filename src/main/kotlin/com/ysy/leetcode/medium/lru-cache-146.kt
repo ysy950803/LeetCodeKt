@@ -1,4 +1,4 @@
-package com.ysy
+package com.ysy.leetcode.medium
 
 class LRUCache(private val capacity: Int) {
 
@@ -61,8 +61,8 @@ class LRUCache(private val capacity: Int) {
 }
 
 /**
- * Your com.ysy.LRUCache object will be instantiated and called as such:
- * var obj = com.ysy.LRUCache(capacity)
+ * Your LRUCache object will be instantiated and called as such:
+ * var obj = LRUCache(capacity)
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */

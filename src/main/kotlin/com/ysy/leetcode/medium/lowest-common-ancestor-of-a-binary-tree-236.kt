@@ -1,4 +1,4 @@
-package com.ysy
+package com.ysy.leetcode.medium
 
 /**
  * Definition for a binary tree node.
@@ -8,13 +8,13 @@ package com.ysy
  * }
  */
 
-class TreeNode(var `val`: Int = 0) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
 class Solution236 {
 
+    class TreeNode(var `val`: Int = 0) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
+    
     private val currentPath = ArrayDeque<TreeNode>()
 
     fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
@@ -48,6 +48,11 @@ class Solution236 {
 
 class Solution236_2 {
 
+    class TreeNode(var `val`: Int = 0) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
+    
     fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
         if (root == null || root.isSame(p) || root.isSame(q)) return root
         val left = lowestCommonAncestor(root.left, p, q)

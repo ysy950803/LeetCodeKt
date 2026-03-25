@@ -1,4 +1,4 @@
-package com.ysy.simple
+package com.ysy.leetcode.easy
 
 /**
  * Example:
@@ -11,12 +11,12 @@ package com.ysy.simple
  * }
  */
 
-class TreeNode(var `val`: Int = 0) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
 class Solution938 {
+
+    class TreeNode(var `val`: Int = 0) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
 
     private var low = 0
     private var high = 0

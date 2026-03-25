@@ -1,4 +1,4 @@
-package com.ysy.simple
+package com.ysy.leetcode.easy
 
 class Solution9 {
 

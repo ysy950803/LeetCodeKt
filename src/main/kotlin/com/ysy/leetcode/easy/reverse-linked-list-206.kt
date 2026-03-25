@@ -1,4 +1,4 @@
-package com.ysy.simple
+package com.ysy.leetcode.easy
 
 /**
  * Example:
@@ -10,17 +10,17 @@ package com.ysy.simple
  * }
  */
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
-
 class Solution206 {
+
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
 
     fun reverseList(head: ListNode?): ListNode? {
         head ?: return null
         var pre: ListNode? = null
         var cur: ListNode? = head
-        var next: ListNode? = null
+        var next: ListNode?
         while (cur != null) {
             next = cur.next
             cur.next = pre
@@ -33,6 +33,10 @@ class Solution206 {
 }
 
 class Solution206_2 {
+
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
 
     fun reverseList(head: ListNode?): ListNode? {
         val newHead = reverseListI(head)
