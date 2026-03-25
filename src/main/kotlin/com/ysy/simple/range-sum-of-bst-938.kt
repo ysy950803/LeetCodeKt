@@ -1,17 +1,21 @@
 package com.ysy.simple
 
-import com.ysy.TreeNode
-
 /**
  * Example:
- * var ti = com.ysy.TreeNode(5)
+ * var ti = TreeNode(5)
  * var v = ti.`val`
  * Definition for a binary tree node.
- * class com.ysy.TreeNode(var `val`: Int) {
- *     var left: com.ysy.TreeNode? = null
- *     var right: com.ysy.TreeNode? = null
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
+
+class TreeNode(var `val`: Int = 0) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+}
+
 class Solution938 {
 
     private var low = 0

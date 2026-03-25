@@ -2,11 +2,16 @@ package com.ysy
 
 /**
  * Definition for a binary tree node.
- * class com.ysy.TreeNode(var `val`: Int = 0) {
- *     var left: com.ysy.TreeNode? = null
- *     var right: com.ysy.TreeNode? = null
+ * class TreeNode(var `val`: Int = 0) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
  * }
  */
+
+class TreeNode(var `val`: Int = 0) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+}
 
 class Solution236 {
 
